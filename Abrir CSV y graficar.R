@@ -1,6 +1,10 @@
 ##################################### Abrir CSV #####################################
 path<-file.choose()
-datos<- read.csv(path)
+print(path)
+#datos<- read.csv(path)
+datos<- read.csv("BTC-USD.csv")
+#datos<- read.csv("C:\\Users\\Braya\\OneDrive\\Escritorio\\RepositorioR\\Rstudio\\BTC-USD.csv")
+
 print(datos)
 colnames(datosEntr)=c("fecha","abrio","maximo","minimo","cerra","adjcerra","volumen")
 
